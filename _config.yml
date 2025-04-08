@@ -1,9 +1,19 @@
-theme: null
+theme: minimal-mistakes
 
-# 取消所有默认的布局
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: null
+# 禁用导航栏和页脚
+minimal_mistakes:
+  header:
+    navigation: false
+  footer: false
+
+# 全局 Markdown 设置
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+
+
+# 作者信息（可选）
+author:
+  name: "你的名字"
+  email: "你的邮箱"
