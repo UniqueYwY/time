@@ -1,15 +1,27 @@
-# Jekyll 配置文件
-
-theme: jekyll-theme-minimal  # 使用 minimal 主题，这个主题非常简洁，没有多余的元素
-title: null                  # 不显示默认标题
-show_downloads: false        # 不显示下载按钮
-logo: null                   # 不显示 logo
-
-# 配置 Markdown 选项
+# _config.yml
+theme: null
 markdown: kramdown
-kramdown:
-  #input: GFM                 # 使用 GitHub Flavored Markdown
-  hard_wrap: false           # 不强制换行
 
-# 去除页脚
-footer: false                # 如果主题支持关闭页脚，这样设置
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 插件（可选，用于更好的Markdown支持）
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# 禁用 Jekyll 默认的排除文件列表
+include: [".htaccess"]
+
+# 建议关闭任何可能的输出，确保网站尽可能简洁
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
