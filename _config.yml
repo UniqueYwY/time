@@ -1,0 +1,14 @@
+theme: minima
+title: "我的经验分享"        # 全局默认标题
+description: "这是我的个人网站，分享我的学习和生活经验。"
+url: "https://<username>.github.io"  # 你的网站 URL
+baseurl: "/<repository>"            # 如果仓库不是在根目录下
+
+# 关闭默认布局中的标题显示
+defaults:
+  - scope:
+      path: ""                      # 对所有文件有效
+      type: "pages"                 # 只针对普通页面
+    values:
+      layout: "default"             # 使用自定义布局
+      show_title: false             # 在自定义布局中使用此变量来控制标题显示
