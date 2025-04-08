@@ -1,27 +1,9 @@
-# _config.yml
 theme: null
-markdown: kramdown
 
-kramdown:
-  input: GFM
-  hard_wrap: false
-
-# 插件（可选，用于更好的Markdown支持）
-plugins:
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-titles-from-headings
-
-# 禁用 Jekyll 默认的排除文件列表
-include: [".htaccess"]
-
-# 建议关闭任何可能的输出，确保网站尽可能简洁
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+# 取消所有默认的布局
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: null
