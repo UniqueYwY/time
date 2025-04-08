@@ -8,7 +8,7 @@ logo: null                   # 不显示 logo
 # 配置 Markdown 选项
 markdown: kramdown
 kramdown:
-  input: GFM                 # 使用 GitHub Flavored Markdown
+  #input: GFM                 # 使用 GitHub Flavored Markdown
   hard_wrap: false           # 不强制换行
 
 # 去除页脚
