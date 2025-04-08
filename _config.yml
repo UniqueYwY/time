@@ -1,1 +1,15 @@
-theme: minima
+# Jekyll 配置文件
+
+theme: jekyll-theme-minimal  # 使用 minimal 主题，这个主题非常简洁，没有多余的元素
+title: null                  # 不显示默认标题
+show_downloads: false        # 不显示下载按钮
+logo: null                   # 不显示 logo
+
+# 配置 Markdown 选项
+markdown: kramdown
+kramdown:
+  input: GFM                 # 使用 GitHub Flavored Markdown
+  hard_wrap: false           # 不强制换行
+
+# 去除页脚
+footer: false                # 如果主题支持关闭页脚，这样设置
